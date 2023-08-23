@@ -1,0 +1,36 @@
+Below is the correct way to setup Bricks on Ovirt Nodes:
+
+First Step
+
+vi /etc/fstab
+/dev/sdb1 /gluster_bricks/brick1 xfs rw,inode64,noatime,nouuid  1 2
+/dev/sdc1 /gluster_bricks/brick2 xfs rw,inode64,noatime,nouuid  1 2
+/dev/sdd1 /gluster_bricks/brick3 xfs rw,inode64,noatime,nouuid  1 2
+ 
+Second Step
+
+vi /etc/multipath.conf
+Blacklist
+devnode "^(sd)[a-z][0-9]*"
+multipath -F
+systemctl restart multipathd
+
+Third Step
+
+parted
+select device
+mklabel gpt
+mkpart primary xfs 0% 100% 
+
+Fourth step
+
+mkfs.xfs /dev/sda1 -f 
+mkfs.xfs /dev/sdc1 -f
+mkfs.xfs /dev/sdd1 -f
+
+Fith step 
+
+mount -a
+mount
+
+
