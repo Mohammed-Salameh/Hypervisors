@@ -25,15 +25,15 @@
 
 ### Step 9: Network Configuration
 - After the installation completes:
-# 1. Access the server's terminal (either directly or through the remote console).
-# 2. Type `nmtui` to open the NetworkManager Text User Interface.
-# 3. Select "Edit a connection".
-# 4. Choose your management network interface from the list.
-# 5. Set up a static IP address, netmask, gateway, and DNS for this interface.
-# 6. Configure the hostname for the oVirt Node.
-# 7. Save your changes and exit `nmtui`.
+ 1. Access the server's terminal (either directly or through the remote console).
+ 2. Type `nmtui` to open the NetworkManager Text User Interface.
+ 3. Select "Edit a connection".
+ 4. Choose your management network interface from the list.
+ 5. Set up a static IP address, netmask, gateway, and DNS for this interface.
+ 6. Configure the hostname for the oVirt Node.
+ 7. Save your changes and exit `nmtui`.
 
-## Step 10: Reboot
-# After making all the necessary configurations, reboot the server to ensure all settings take effect.
+### Step 10: Reboot
+- After making all the necessary configurations, reboot the server to ensure all settings take effect.
 
-# Once the server is back online, you can proceed with further configurations or adding the node to an oVirt engine.
+- Once the server is back online, you can proceed with further configurations or adding the node to an oVirt engine.
