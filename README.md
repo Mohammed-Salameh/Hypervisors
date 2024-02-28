@@ -1,5 +1,6 @@
-# Ovirt
-Ovirt Setup and configuration
+# Hypervisors
 
-Note: Gluster Bricks configuration
-"This setup can be implemented for both Oracle and Red Hat virtualization."
+Hypervisors Setup and configuration
+
+**Note:** *Gluster Bricks configuration*
+*This setup can be implemented for both Oracle and Red Hat virtualization & Ovirt.*
