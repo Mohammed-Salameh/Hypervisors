@@ -1,5 +1,3 @@
-# Deploying oVirt Node via ISO on a Physical Server using ILO/IDRAC
-
 ### Step 1: Access Server Management
 - Access the server's Integrated Lights Out (ILO) or Integrated Dell Remote Access Controller (IDRAC) interface, depending on whether you are using an HP server or a Dell server respectively.
 
